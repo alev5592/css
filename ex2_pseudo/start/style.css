@@ -16,4 +16,5 @@ p::first-letter {
 	padding: 16px;
 	background-color: gold;
 	margin: 8px;
+	border-radius: 10px;
 }
