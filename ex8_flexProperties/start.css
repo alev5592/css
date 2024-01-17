@@ -1,0 +1,9 @@
+@import "style.css";
+
+body{
+    display:flex;
+}
+
+#orange{
+    flex:3;
+}
