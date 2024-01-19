@@ -1,0 +1,43 @@
+@import "style.css";
+
+body{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+}
+
+#green{
+    order:1;
+    grid-column: span 3;
+}
+
+#yellow{
+    order:2;
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+
+#red{
+    order: 3;
+}
+
+#orange{
+    order: 5;
+    grid-column: span 2;
+}
+
+#blue{
+    order: 4;
+    grid-row: span 2;
+}
+
+ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto auto; 
+
+    grid-gap: 10px; 
+    grid-auto-flow: column; 
+
+}
