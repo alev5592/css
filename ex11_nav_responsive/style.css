@@ -1,0 +1,151 @@
+* {
+    margin: 1px;
+    padding: 2px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+body {
+    background-color: #212528;
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (min-width: 768px) {
+    div#hide {
+        position: absolute;
+        left: -9999px;
+    }
+
+    nav {
+    
+        border-bottom: 1px solid white;
+
+    }
+
+    .title {
+    
+        color: white;
+    }
+
+    .home {
+
+        color: white;
+    }
+
+    .input {
+        font-size: small;
+    }
+
+    .button {
+        background-color: #212528;
+        border-radius: 3%;
+        border: 1px solid green;
+        color: green;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .disabled {
+        color: darkgray;
+        opacity: 30%;
+    }
+
+    .dropdown {
+        text-decoration: none;
+        color: darkgray;
+        background-color: inherit;
+        border: inherit;
+    }
+}
+
+
+
+@media screen and (max-width:768px) {
+
+    nav#hide {
+        position: absolute;
+        left: -9999px;
+    }
+
+
+    #menuToggle a
+    {
+      text-decoration: none;
+      color: #232323;
+      
+      transition: color 0.3s ease;
+    }
+    
+    
+    #menuToggle input {
+      position: absolute;
+      cursor: pointer;
+      opacity: 0;
+      width: 40px;
+    
+      z-index: 2; /* in order to place the checkbox over the hamburguer */
+
+    }
+    
+    #menuToggle span {
+      display: block; 
+      width: 33px;
+      height: 4px;
+      margin-bottom: 5px; 
+      position: relative;
+      background: #cdcdcd;
+      border-radius: 3px;
+      z-index: 1; 
+      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+      transform-origin: 4px 0px; 
+    }
+    
+    #menuToggle input:checked ~ span {
+      opacity: 1;
+      transform: rotate(45deg) translate(-2px, -1px);
+      background: #232323;
+    }
+    
+    #menuToggle input:checked ~ span:nth-last-child(3) {
+      opacity: 0;
+      transform: rotate(0deg) scale(0.2, 0.2);
+    }
+    
+    #menuToggle input:checked ~ span:nth-last-child(2) {
+      transform: rotate(-45deg) translate(0, -1px);
+    }
+    #menu {
+      position: absolute;
+      left: -300px;
+      top: 80px;
+      width: 200px;
+      margin: -100px 0 0 -50px;
+      padding: 50px;
+      padding-top: 125px;
+      background: rgb(243, 209, 215);
+      list-style-type: none;
+      -webkit-font-smoothing: antialiased;
+    
+      transition: left 0.5s;
+      
+    }
+    
+    #menu li {
+      padding: 10px 0;
+      font-size: 22px;
+    }
+    #menuToggle input:checked ~ ul {
+      left: 40px;
+    }
+
+    .button {
+        background-color: #212528;
+        border-radius: 3%;
+        border: 1px solid green;
+        color: green;
+    }
+    
+}
