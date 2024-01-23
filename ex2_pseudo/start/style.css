@@ -8,7 +8,7 @@ a {
 	text-decoration: none;
 }
 
-p::first-letter {
+.first-only::first-letter {
 
 	float: left;
 	color: darkred;
