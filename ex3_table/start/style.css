@@ -1,4 +1,4 @@
-table {
+table { 
     border: 1px solid #263238;
     width: 50%;
 }
@@ -11,7 +11,7 @@ caption {
 }
 
 table th {
-    background-color: #263238;
+    background-color: #455a64;
     color: white;
     font-weight: 700;
 }
